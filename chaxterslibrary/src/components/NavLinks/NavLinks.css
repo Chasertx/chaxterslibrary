@@ -1,0 +1,59 @@
+/* Container for the navigation */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Style for the navigation list */
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Default to side-by-side links */
+  gap: 20px;
+}
+
+/* Style for the links */
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Hamburger menu icon for small screens */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Show the links when the menu is open on mobile */
+.nav-links.active {
+  display: block; /* Display block when active */
+  position: absolute;
+  top: 50px; /* Place it below the hamburger button */
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+@media screen and (max-width: 300px) {
+  /* On small screens, hide the links by default */
+  .nav-links {
+    display: none; /* Hide by default */
+  }
+
+  /* Show the links when the menu is active (hamburger clicked) */
+  .nav-links.active {
+    display: block; /* Show the links vertically */
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+}
