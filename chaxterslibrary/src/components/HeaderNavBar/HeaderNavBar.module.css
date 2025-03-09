@@ -1,0 +1,71 @@
+.header {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  border: solid;
+  border-radius: 25px;
+  border-width: 1px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5px;
+}
+
+.navbar {
+  justify-content: center;
+  width: 100%;
+}
+
+.navList {
+  list-style: none;
+  gap: 2rem;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.horizontalLayout {
+  display: flex;
+  flex-direction: row;
+  gap: 16px; /* Adjust spacing between items as needed */
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  width: 60%;
+  align-items: center;
+}
+
+.title {
+  font-size: 36px;
+}
+
+@media screen and (max-width: 767px) {
+  /* On small screens, hide the links by default */
+  .rightPortion {
+    display: none; /* Hide by default */
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .horizontalLayout {
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+}

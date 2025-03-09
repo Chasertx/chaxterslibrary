@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px; /* Adjust spacing between items as needed */
+  align-items: center;
+}
+
+.item {
+  padding: 8px 16px;
+  background-color: #0070f3;
+  color: var(--global-primary-text-color);
+  border-radius: 8px;
+}
+
+/* Hide the container on screens narrower than 768px */
+@media (max-width: 767px) {
+  .container {
+    display: none;
+  }
+}
