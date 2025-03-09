@@ -18,7 +18,7 @@
 /* Style for the links */
 .nav-links a {
   text-decoration: none;
-  color: #333;
+  color: var(--global-primary-text-color);
   font-size: 16px;
 }
 
@@ -42,7 +42,7 @@
   border-top: 1px solid #ddd;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 767px) {
   /* On small screens, hide the links by default */
   .nav-links {
     display: none; /* Hide by default */
@@ -51,6 +51,9 @@
   /* Show the links when the menu is active (hamburger clicked) */
   .nav-links.active {
     display: block; /* Show the links vertically */
+    width: fit-content;
+    color: var(--global-primary-color);
+    background-color: var(--global-primary-color);
   }
 
   .nav-container {

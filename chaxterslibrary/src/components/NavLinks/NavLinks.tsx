@@ -19,7 +19,7 @@ const NavLinks: React.FC<NavLinksProps> = ({ links }) => {
 
   // Set screen size
   const handleResize = () => {
-    setIsMobile(window.innerWidth < 300);
+    setIsMobile(window.innerWidth < 767);
   };
 
   // Listen for screen size changes
